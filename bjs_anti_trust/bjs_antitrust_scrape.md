@@ -1,27 +1,23 @@
----
-title: "Anti-Trust Data Scrape"
-author: "Tyler Mallon"
-date: "June 3, 2019"
-output: github_document
----
+Anti-Trust Data Scrape
+================
+Tyler Mallon
+June 3, 2019
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+Summary of Contents
+===================
 
-# Summary of Contents
+This notebook scrapes anti-trust case data from [this](https://www.justice.gov/atr/antitrust-case-filings-alpha) location. It then creates a structured dataset of the contents found from each of the individual case files. This data isn't perfectly cleaned, but rather is reflective of what can be found directly from the source. We have taken some minor effort to place this data in a flat file, but this could benefit from further cleaning. The code chunks are broken out between the scraping function and the cleaning efforts.
 
-This notebook scrapes anti-trust case data from [this](https://www.justice.gov/atr/antitrust-case-filings-alpha) location. It then creates a structured dataset of the contents found from each of the individual case files. This data isn't perfectly cleaned, but rather is reflective of what can be found directly from the source. We have taken some minor effort to place this data in a flat file, but this could benefit from further cleaning. The code chunks are broken out between the scraping function and the cleaning efforts.  
-
-```{r pkg_loag, eval = FALSE}
+``` r
 rm(list=ls(all=T))
 library(tidyverse)
 library(rvest)
 ```
 
-## Scrape
+Scrape
+------
 
-```{r scrape_code, eval = FALSE}
+``` r
 # appropriate css selectors determined using SelectorGadget chrome plugin
 
 caselinkcss <- ".even div p a"
@@ -99,9 +95,10 @@ case_data <- get_case_data(baseurl = "https://www.justice.gov/atr/antitrust-case
 write_csv(case_data, "anti_trust_case_data.csv")
 ```
 
-## Clean
+Clean
+-----
 
-```{r clean_code, eval = FALSE}
+``` r
 # read scraped data
 anti_trust <- read_csv("anti_trust_case_data.csv")
 
