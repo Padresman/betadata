@@ -1,0 +1,131 @@
+---
+title: "Anti-Trust Data Scrape"
+author: "Tyler Mallon"
+date: "June 3, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Summary of Contents
+
+This notebook scrapes anti-trust case data from [this](https://www.justice.gov/atr/antitrust-case-filings-alpha) location. It then creates a structured dataset of the contents found from each of the individual case files. This data isn't perfectly cleaned, but rather is reflective of what can be found directly from the source. We have taken some minor effort to place this data in a flat file, but this could benefit from further cleaning. The code chunks are broken out between the scraping function and the cleaning efforts.  
+
+```{r pkg_loag, eval = FALSE}
+rm(list=ls(all=T))
+library(tidyverse)
+library(rvest)
+```
+
+## Scrape
+
+```{r scrape_code, eval = FALSE}
+# appropriate css selectors determined using SelectorGadget chrome plugin
+
+caselinkcss <- ".even div p a"
+datavalcss <- ".field--label-above .odd , .field--label-above .even , .date-display-single , .field__label"
+
+get_case_data <- function(baseurl, caselinkcss, datavalcss) {
+  
+  # get character vector of links to click on
+  case_filings <- read_html(baseurl) %>%
+    html_nodes(caselinkcss) %>%
+    html_text()
+  
+  # begin headless browser
+  session <- html_session(baseurl)
+  
+  #initialize empty list
+  lyst <- list()
+
+  # iterate through character vector of list links and jump into each one, extract out the data values as a vector and store in a list
+  for (i in 1:length(case_filings)) {
+   lyst[[i]] <- session %>%
+    follow_link(case_filings[i]) %>%
+      html_nodes(datavalcss) %>%
+      html_text(trim = TRUE) %>%
+      unique(.)
+  }
+  
+  # name list elements by link string
+  names(lyst) <- case_filings
+  
+  # collapse all character vectors into a dataframe
+  df <- enframe(lyst) %>% # creates the 'value' as a `list` column
+   mutate(value = map(value, as.character)) %>% # change to single type
+   unnest(.) %>%
+    mutate(index = seq_along(name))
+  
+  # label rows as key or value based on colon.
+  df <- df %>%
+  mutate(kv = ifelse(value %>% str_detect(":"), "Key", "Value"))
+  
+  # initialize empty list
+  lyst2 <- list()
+
+  # loop through df and extract out the index of keys
+  for (i in 1:length(df$index) + 1) {
+    lyst2[i] <- tail(which(df$index < i & df$kv == "Key"), n = 1L)
+  }
+  
+  # remove first list element since it's null
+  lyst2[[1]] <- NULL
+  
+  # turn lyst2 into a dataframe
+  lyst2 <- unlist(lyst2) %>%
+  enframe(., value = "index", name = NULL)
+  
+  # join key column on df
+  df <- df %>%
+  select(value, index) %>%
+  right_join(lyst2, by = "index") %>%
+  select(value) %>%
+  rename("Key" = value) %>%
+  bind_cols(., df) %>%
+  filter(kv == "Value") %>%
+  select(Key, name, value)
+  
+  return(df)
+}
+
+# run scrape
+case_data <- get_case_data(baseurl = "https://www.justice.gov/atr/antitrust-case-filings-alpha", 
+              caselinkcss = ".even div p a",
+              datavalcss = ".field--label-above .odd , .field--label-above .even , .date-display-single , .field__label")
+
+# write scraped data
+write_csv(case_data, "anti_trust_case_data.csv")
+```
+
+## Clean
+
+```{r clean_code, eval = FALSE}
+# read scraped data
+anti_trust <- read_csv("anti_trust_case_data.csv")
+
+# remove unnecessary colons
+anti_trust <- anti_trust %>%
+  mutate(Key = str_replace(Key,":",""))
+
+# look for all key values
+key_list <- anti_trust %>%
+  distinct(Key)
+
+# select only generic key values
+anti_trust <- anti_trust %>%
+  filter(Key %in% c("Case Open Date", "Case Name", "Case Type", "Case Violation", "Market", "Industry Code", "Component", "Topic")) %>%
+  distinct(Key, name, value)
+ 
+# create flat file of data
+anti_trust_flat <- anti_trust %>%
+  group_by(Key, name) %>%
+  mutate(ind = row_number()) %>%
+  spread(Key, value) %>%
+  ungroup(.) %>%
+  group_by(name) %>%
+  select(everything(), -ind) %>%
+  fill(everything(), .direction = c("down")) %>%
+  rename("Link Title" = name)
+```
