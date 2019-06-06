@@ -1,6 +1,6 @@
 Anti-Trust Data Scrape
 ================
-Tyler Mallon
+Tyler Mallon  
 June 3, 2019
 
 Summary of Contents
