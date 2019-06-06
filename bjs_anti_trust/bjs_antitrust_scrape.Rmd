@@ -1,6 +1,6 @@
 ---
 title: "Anti-Trust Data Scrape"
-author: "Tyler Mallon\n"
+author: "Tyler Mallon"
 date: "June 3, 2019"
 output: github_document
 ---
