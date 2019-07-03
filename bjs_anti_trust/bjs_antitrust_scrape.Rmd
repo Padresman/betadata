@@ -128,4 +128,6 @@ anti_trust_flat <- anti_trust %>%
   select(everything(), -ind) %>%
   fill(everything(), .direction = c("down")) %>%
   rename("Link Title" = name)
+
+write_csv(anti_trust_flat, "anti_trust_spread.csv", append = FALSE)
 ```
