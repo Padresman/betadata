@@ -1,2 +1,6 @@
 # betadata
-This repository contains the data we have acquired as part of various works in progress and doesn't have a permanent home yet within our central databases
+This repository contains the data and pipelines USAFacts is currently working on which doesn't have a permanent home yet within our internal databases.
+
+## Projects underway
+
+* DOJ anti-trust case filings
