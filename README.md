@@ -4,3 +4,4 @@ This repository contains the data and pipelines USAFacts is currently working on
 ## Projects underway
 
 * DOJ anti-trust case filings
+* FBI active shooter events data
