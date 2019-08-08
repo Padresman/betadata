@@ -158,8 +158,38 @@ active_shooters %>%
 
 ```{r event_distribution_by_gender}
 
+active_shooters %>% 
+  select(event_name, shooter_gender) %>% 
+  group_by(event_name, shooter_gender) %>% 
+  na.omit(.) %>%
+  count() %>% 
+  ggplot(aes(x=shooter_gender, y=n, fill = shooter_gender)) + 
+  scale_y_continuous(breaks=seq(0,300,25)) +
+  scale_fill_viridis(discrete = TRUE, option = "E") +
+  geom_col(show.legend = FALSE) + 
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = 0.5)) + 
+  labs(x = "Gender", 
+       y = "Active Shooter Events", 
+       title = "Active shooter event distribution by gender"
+       ) 
 ```
 
 ```{r event_distribution_by_age}
 
+active_shooters %>% 
+  select(event_name, shooter_age) %>% 
+  group_by(event_name, shooter_age) %>% 
+  na.omit(.) %>% 
+  count() %>% 
+  ggplot(aes(x=shooter_age)) + 
+  geom_histogram(color = "dodgerblue3", fill = "deepskyblue4") + 
+  scale_y_continuous(breaks=seq(0,30,5)) +
+  scale_x_continuous(breaks=seq(0,100,5)) +
+  theme_minimal() + 
+  theme(plot.title = element_text(hjust = 0.5)) + 
+  labs(x = "Age", 
+       y = "Active Shooter Events", 
+       title = "Active shooter event distribution by age"
+       ) 
 ```
