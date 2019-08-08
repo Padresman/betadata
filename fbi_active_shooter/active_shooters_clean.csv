@@ -1,0 +1,282 @@
+event_name,casualties,wounded,killed,city,state,location_type,rifles,shotguns,handguns,explosives,date_time,shooter_age,shooter_gender
+18 Miles of U.S. Route 64 from Sallisaw to Roland Oklahoma,10,8,2,Sallisaw,Oklahoma,Open Space,0,1,0,0,2002-10-26T17:00:00Z,18,Male
+ABB Plant,8,5,3,St. Louis,Missouri,Commerce,1,1,2,0,2010-01-07T06:30:00Z,51,Male
+Accent Signage Systems,8,2,6,Minneapolis,Minnesota,Commerce,0,0,1,0,2012-09-27T16:35:00Z,36,Male
+Advanced Granite Solutions and 28th Street Auto Sales and Service,6,3,3,Edgewood,Maryland,Commerce,0,0,1,0,2017-10-18T08:58:00Z,37,Mae
+"Albuquerque, New Mexico",4,4,0,Albuquerque,New Mexico,Open Space,2,0,3,0,2013-10-26T11:20:00Z,35,Male
+American Civic Association Center,17,4,13,Binghamton,New York,Commerce,0,0,2,0,2009-04-03T10:31:00Z,41,Male
+AmeriCold Logistics,3,3,0,Crete,Nebraska,Commerce,0,0,1,0,2010-09-22T21:54:00Z,26,Male
+Amko Trading Store,4,0,4,Houston,Texas,Commerce,0,0,2,0,2001-01-09T12:00:00Z,54,Male
+Am-Pac Tire Pros,3,2,1,Simi Valley,California,Commerce,0,0,1,0,2007-10-08T07:30:00Z,29,Male
+Andover Industries,3,2,1,Andover,Ohio,Commerce,0,0,4,0,2003-08-19T08:20:00Z,32,Male
+Antigo High School,2,2,0,Antigo,Wisconsin,Education,1,0,0,0,2016-04-23T23:02:00Z,18,Male
+Appalachian School of Law,6,3,3,Grundy,Virginia,Education,0,0,1,0,2002-01-16T13:15:00Z,43,Male
+Arapahoe High School,1,0,1,Centennial,Colorado,Education,0,1,0,3,2013-12-13T00:00:00Z,18,Male
+Arizona State Route 87,2,2,0,Phoenix,Arizona,Open Space,1,0,0,0,2016-05-24T20:30:00Z,36,Male
+AT&T Cellular,1,1,0,New York Mills,New York,Commerce,0,0,1,0,2010-05-27T13:00:00Z,79,Male
+Atlantis Plastics Factory,6,1,5,Henderson,Kentucky,Commerce,0,0,1,0,2008-06-25T00:00:00Z,25,Male
+Azana Day Salon,7,4,3,Brookfield,Wisconsin,Commerce,0,0,1,0,2012-10-21T11:09:00Z,45,Male
+Aztec High School,2,0,2,Aztec,New Mexico,Education,0,0,1,0,2017-12-07T08:00:00Z,21,Male
+Ben E. Keith Albuquerque,3,3,0,Albuquerque,New Mexico,Commerce,0,0,1,0,2018-11-12T18:56:00Z,30,Male
+Ben E. Keith Gulf Coast,2,1,1,Missouri City,Texas,Commerce,0,0,1,0,2018-08-20T02:00:00Z,38,Female
+"Benny's Car Wash, Oil Change & B-Quik and Hair Crown Beauty Supply",6,3,3,Baton Rouge,Louisiana,Open Space,2,0,1,0,2016-07-17T08:40:00Z,29,Male
+Berrendo Middle School,3,3,0,Roswell,New Mexico,Education,0,1,0,0,2014-01-14T07:30:00Z,12,Male
+Bertrand Products Inc,9,5,4,South Bend,Indiana,Commerce,1,1,0,0,2002-03-22T08:15:00Z,54,Male
+Best Buy in Hudson Valley Mall,2,2,0,Kingston,New York,Commerce,1,0,0,0,2005-02-13T15:15:00Z,25,Male
+Blue Sky Carnival,1,1,0,Bloomfield,New Jersey,Open Space,0,0,1,0,2010-05-07T22:22:00Z,17,Male
+Borderline Bar and Grill,28,16,12,Thousand Oaks,California,Commerce,0,0,1,0,2018-11-07T23:20:00Z,28,Male
+Boulder Stove and Flooring,2,0,2,Boulder,Colorado,Commerce,0,0,1,0,2010-05-17T11:05:00Z,53,Male
+"Brady, Texas and Jacksonville, North Carolina",6,5,1,Brady,Texas,Open Space,1,0,1,0,2013-05-26T04:30:00Z,23,Male
+"Brady, Texas and Jacksonville, North Carolina",1,0,1,Jacksonville,North Carolina,Open Space,1,0,1,0,2013-05-26T04:30:00Z,23,Male
+Bronx-Lebanon Hospital Center,7,6,1,Bronx,New York,Health Care,1,0,0,0,2017-06-30T14:50:00Z,45,Male
+Burger King and Huddle House,3,2,1,North Augusta,South Carolina,Commerce,1,0,0,0,2005-11-22T06:10:00Z,NA,Male
+Burnette Chapel Church of Christ,8,7,1,Antioch,Tennessee,House of Worship,0,0,2,0,2017-09-24T11:15:00Z,25,Male
+Café Racer,5,0,5,Seattle,Washington,Commerce,0,0,2,0,2012-05-30T10:52:00Z,40,Male
+California Auto Specialist and Apartment Complex,6,3,3,Colton,California,Commerce,0,0,1,0,2005-08-08T14:40:00Z,35,Male
+Campbell County Comprehensive High School,2,1,1,Jacksboro,Tennessee,Education,0,0,1,0,2005-11-08T14:14:00Z,14,Male
+Capital Gazette,7,2,5,Annapolis,Maryland,Commerce,0,1,0,0,2018-06-29T14:34:00Z,38,Male
+Cascade Mall,5,0,5,Burlington,Washington,Commerce,1,0,0,0,2016-09-23T18:52:00Z,20,Male
+"Case Western Reserve University, Weatherhead School of Management",3,2,1,Cleveland,Ohio,Education,1,0,1,0,2003-05-09T15:55:00Z,62,Male
+Cedarville Rancheria Tribal Office,6,2,4,Alturas,California,Government,0,0,1,0,2014-02-20T15:30:00Z,44,Female
+Chardon High School,6,3,3,Chardon,Ohio,Education,0,0,1,0,2012-02-27T07:30:00Z,17,Male
+Cici's Pizza and Walmart,2,0,2,Las Vegas,Nevada,Commerce,0,1,1,0,2014-06-08T11:20:00Z,31,Male
+Cici's Pizza and Walmart,1,0,1,Las Vegas,Nevada,Commerce,0,0,1,0,2014-06-08T11:20:00Z,22,Female
+Cinemark Century 16,70,58,12,Aurora,Colorado,Commerce,1,1,1,0,2012-07-20T00:30:00Z,24,Male
+City Grill Café,4,2,2,Hurtsboro,Alabama,Commerce,1,0,0,0,2018-03-07T06:30:00Z,64,Male
+Clackamas Town Center Mall,3,1,2,Happy Valley,Oregon,Commerce,1,0,0,0,2012-12-11T15:25:00Z,22,Male
+Clovis-Carver Public Library,6,4,2,Clovis,New Mexico,Government,0,0,1,0,2017-08-28T16:15:00Z,16,Male
+Club LT Tranz,3,2,1,Houston,Texas,Commerce,NA,NA,NA,NA,2009-07-25T04:40:00Z,NA,NA
+Coffee and Geneva Counties Alabama,11,1,10,NA,Alabama,Open Space,1,0,0,0,2009-03-10T16:00:00Z,28,Male
+"Cole Hall Auditorium, Northern Illinois University",21,16,5,DeKalb,Illinois,Education,0,1,3,0,2008-02-14T15:00:00Z,27,Male
+Columbia High School,1,1,0,East Greenbush,New York,Education,0,1,0,0,2004-02-09T10:30:00Z,16,Male
+ConAgra Plant,8,2,6,Kansas City,Kansas,Commerce,0,0,1,0,2004-07-02T17:00:00Z,21,Male
+Co-op City Apartment Building's Leasing Office,3,2,1,Bronx,New York,Commerce,0,0,1,0,2007-08-30T07:50:00Z,44,Male
+"Copley Township Neighborhood, Ohio",8,1,7,Copley Township,Ohio,Residence,0,0,2,0,2011-08-07T10:55:00Z,51,Male
+Copper Top Bar,18,18,0,Tuscaloosa,Alabama,Commerce,1,0,0,0,2012-07-17T00:29:00Z,44,Male
+Crawford County Courthouse,1,1,0,Girard,Kansas,Government,1,0,3,0,2011-09-13T15:37:00Z,48,Male
+Dad's Sing Along Club,2,2,0,San Antonio,Texas,Commerce,0,0,1,0,2015-03-14T02:00:00Z,29,Male
+DaimlerChrysler's Toledo North Assembly Plant,3,2,1,Toledo,Ohio,Commerce,0,1,0,0,2005-01-26T20:34:00Z,54,Male
+Days Inn and Volunteer Parkway,4,3,1,Bristol,Tennessee,Open Space,1,0,1,0,2016-07-07T02:18:00Z,37,Male
+Deer Creek Middle School,2,2,0,Littleton,Colorado,Education,1,0,0,0,2010-02-23T15:10:00Z,32,Male
+Dixon High School,0,0,0,Dixon,Illinois,Education,1,0,0,0,2018-05-16T08:00:00Z,19,Male
+Dollar General Store,1,1,0,Cheektowaga,New York,Commerce,2,0,0,0,2017-11-14T16:30:00Z,29,Male
+Edgewater Technology Inc.,7,0,7,Wakefield,Massachusetts,Commerce,1,1,1,0,2000-12-26T11:15:00Z,42,Male
+Emanuel African Methodist Epispocal Church,9,0,9,Charleston,South Carolina,House of Worship,1,0,0,0,2015-06-17T21:00:00Z,21,Male
+Emcore Corporation,6,4,2,Albuquerque,New Mexico,Commerce,0,0,1,0,2010-07-12T09:30:00Z,37,Male
+Essex Elementary School and Two Residences,4,2,2,Essex,Vermont,Education,0,0,1,0,2006-08-24T13:55:00Z,26,Male
+Eugene Simpson Stadium Park,4,4,0,Alexandria,Virginia,Open Space,1,0,1,0,2017-06-14T07:15:00Z,66,Male
+"Excel Industries and Newton and Hesston, Kansas",17,14,3,Newton,Kansas,Commerce,1,0,1,0,2016-02-25T16:57:00Z,38,Male
+Family Dental Care,5,4,1,Simi Valley,California,Commerce,1,0,0,0,2009-07-01T10:30:00Z,30,Male
+Farm King Store,0,0,0,Macomb,Illinois,Commerce,1,0,0,0,2010-02-03T12:45:00Z,19,Male
+Federal Express,6,6,0,Kennesaw,Georgio,Commerce,0,1,0,1,2014-04-29T05:50:00Z,19,Male
+Fiamma Inc.,5,0,5,Orlando,Florida,Commerce,0,0,1,0,2017-06-05T08:00:00Z,45,Male
+Fifth Third Center,5,2,3,Cincinnati,Ohio,Commerce,0,0,1,0,2018-09-06T09:10:00Z,29,Male
+"First Baptist Church in Sutherland Springs, Texas",46,20,26,Sutherland Springs,Texas,House of Worship,1,0,0,0,2017-11-05T11:20:00Z,26,Male
+Florida State University,3,3,0,Tallahassee,Florida,Education,0,0,1,0,2014-11-20T00:00:00Z,31,Male
+Forsyth County Courthouse,1,1,0,Cumming,Georgio,Government,1,0,3,2,2014-06-06T10:00:00Z,48,Male
+Fort Bliss Convenience Store,2,1,1,El Paso,Texas,Government,0,0,1,0,2010-09-20T15:00:00Z,63,Male
+Fort Hood Army Base,15,12,3,Fort Hood,Texas,Government,0,0,1,0,2014-04-02T16:00:00Z,34,Male
+Fort Hood Soldier Readiness Processing Center,45,32,13,Fort Hood,Texas,Government,0,0,2,0,2009-11-05T13:20:00Z,39,Male
+Fort Lauderdale-Hollywood International Airport,13,8,5,Fort Lauderdale,Florida,Government,0,0,1,0,2017-01-06T13:15:00Z,26,Male
+Forza Coffee Shop,4,0,4,Tacoma,Washington,Commerce,0,0,1,0,2009-11-29T08:15:00Z,37,Male
+"Frankstown Township, Pennsylvania",6,3,3,Frankstown Township,Pennsylvania,Open Space,0,0,2,0,2012-12-21T08:59:00Z,44,Male
+Freeman High School,4,3,1,Rockford,Washington,Education,1,0,1,0,2017-09-13T10:00:00Z,15,Male
+FreightCar America,4,3,1,Roanoke,Virginia,Commerce,0,0,1,0,2016-10-25T06:00:00Z,53,Male
+"Gainesville, Florida",6,5,1,Gainesville,Florida,Open Space,0,0,1,0,2010-10-04T16:00:00Z,24,Male
+Giordano and Giordano Law Office,5,3,2,Alexandria,Louisiana,Commerce,0,0,1,0,2007-10-04T14:00:00Z,63,Male
+GLHF Game Bar,13,11,2,Jacksonville,Florida,Commerce,0,0,2,0,2018-08-26T13:34:00Z,24,Male
+Gold Leaf Nursery,3,0,3,Boynton Beach,Florida,Commerce,0,0,1,0,2003-07-28T11:40:00Z,45,Male
+"Government Buildings in Austin, Texas",0,0,0,Austin,Texas,Government,1,0,1,2,2014-11-28T02:21:00Z,49,Male
+Grady Crawford Construction,3,1,2,Baton Rouge,Louisiana,Commerce,0,0,1,0,2009-12-23T13:50:00Z,53,Male
+Grand 16 Theatre,11,9,2,Lafayette,Louisiana,Commerce,0,0,1,0,2015-07-23T19:15:00Z,59,Male
+Granite Hills High School,5,5,0,El Cajon,California,Education,0,1,1,0,2001-03-22T12:55:00Z,18,Male
+"Group Home in Topeka, Kansas",4,1,3,Topeka,Kansas,Health Care,0,0,1,0,2017-04-30T15:50:00Z,25,Male
+Hardford Beer Distribution Center,10,2,8,Manchester,Connecticut,Commerce,0,0,2,0,2010-08-03T07:00:00Z,34,Male
+Harkness Hall at Hampton University,2,2,0,Hampton,Virginia,Education,0,0,3,0,2009-04-26T00:57:00Z,18,Male
+H-E-B Grocery Store,4,3,1,Palmview,Texas,Commerce,0,0,1,0,2016-11-28T03:15:00Z,25,Male
+Helen Vine Recovery Center,3,2,1,San Rafael,California,Health Care,0,0,1,0,2018-11-05T01:30:00Z,37,Male
+Hialeah Apartment Building,6,0,6,Hialeah,Florida,Residence,0,0,1,0,2013-07-26T18:30:00Z,42,Male
+"Highway 141 in Gateway, Colorado",0,0,0,Gateway,Colorado,Open Space,0,0,1,0,2017-07-30T16:15:00Z,54,Male
+"Highway 365 Near Whitehall Road in Gainesville, Georgia",3,3,0,Gainesville,Georgia,Open Space,0,0,1,0,2018-05-04T11:58:00Z,26,Male
+Highway 509 Near Seattle-Tacoma International Airport,0,0,0,Seattle,Washington,Open Space,NA,NA,NA,NA,2018-06-13T13:42:00Z,NA,NA
+Hon-Dah Resort Casino and Conference Center,2,2,0,Pinetop,Arizona,Commerce,1,0,0,0,2014-08-02T18:38:00Z,28,Male
+Hot Yoga Tallahassee,7,5,2,Tallahassee,Florida,Commerce,0,0,1,0,2018-11-02T17:37:00Z,40,Male
+"House Party in Mukilteo, Washington",4,1,3,Mukilteo,Washington,Residence,1,0,0,0,2016-07-30T00:07:00Z,19,Male
+"House Party in South Jamaica, New York",11,11,0,Queens,New York,Residence,0,0,1,0,2011-08-27T00:40:00Z,22,Male
+Inland Region Center,18,11,7,San Bernardino,California,Commerce,1,0,1,1,2015-12-02T11:30:00Z,28,Male
+Inland Region Center,18,11,7,San Bernardino,California,Commerce,1,0,1,0,2015-12-02T11:30:00Z,29,Female
+Inskip Elementary School,2,2,0,Knoxville,Tennessee,Education,0,0,1,0,2010-02-10T12:49:00Z,48,Male
+International House of Pancakes,11,7,4,Carson City,Nevada,Commerce,1,0,0,0,2011-09-06T08:58:00Z,32,Male
+"Interstate 5 in Skagit County, Washington",10,4,6,Alger,Washington,Open Space,1,0,0,0,2008-09-02T14:15:00Z,28,Male
+J.T. Tire,4,2,2,Durham,North Carolina,Commerce,0,0,1,0,2012-03-23T15:02:00Z,24,Male
+Jewish Community Center of Greater Kansas City and Village Shalom Retirement Community,3,0,3,Overland Park,Kansas,House of Worship,0,1,2,0,2014-04-13T01:00:00Z,73,Male
+Jewish Federation of Greater Seattle,6,5,1,Seattle,Washington,House of Worship,0,0,2,0,2006-07-28T16:00:00Z,30,Male
+John's Barbershop and Gaffey's Clean Car Center,6,2,4,Herkimer,New York,Commerce,0,1,0,0,2013-03-13T09:30:00Z,64,Male
+Kanawha County Board of Education,1,1,0,Charleston,West Virginia,Education,2,0,2,0,2003-07-17T19:00:00Z,58,Male
+Kelly Elementary School,2,2,0,Carlsbad,California,Education,0,0,1,0,2010-10-08T12:10:00Z,41,Male
+Kenyon Press,3,3,0,Signal Hill,California,Commerce,0,0,1,0,2007-03-05T09:00:00Z,68,Male
+Kirkwood City Hall,6,0,6,Kirkwood,Missouri,Government,0,0,2,0,2008-02-07T19:00:00Z,52,Male
+Kkottongnae Retreat Camp,3,2,1,Temecula,California,House of Worship,0,0,1,0,2009-04-07T19:23:00Z,69,Male
+Knight Transportation Building,3,2,1,Katy,Texas,Commerce,0,1,1,0,2016-05-04T08:45:00Z,65,Male
+Kraft Foods Factory,3,1,2,Philadelphia,Pennsylvania,Commerce,0,0,1,0,2010-09-09T20:35:00Z,43,Female
+"Kroger Grocery Store in Jeffersontown, Kentucky",2,0,2,Jeffersontown,Kentucky,Commerce,0,0,1,0,2018-10-24T15:00:00Z,51,Male
+LA Fitness,12,9,3,Collier Township,Pennsylvania,Commerce,0,0,3,0,2009-08-04T19:56:00Z,48,Male
+La Jolla Crossroads Apartment Complex,8,7,1,San Diego,California,Residence,0,0,1,0,2017-04-30T18:00:00Z,49,Male
+Labor Ready Inc,5,4,1,Huntsville,Alabama,Commerce,0,0,1,0,2003-02-25T06:25:00Z,23,Male
+Laidlaw Transit Services Maintenance Yard,4,3,1,San Jose,California,Commerce,0,0,1,0,2001-04-23T06:00:00Z,36,Female
+"Lake Butler, Florida",4,2,2,Lake Butler,Florida,Open Space,1,1,0,0,2013-08-24T09:20:00Z,72,Male
+Larose-Cut Off Middle School,0,0,0,Cut Off,Louisiana,Education,0,0,1,0,2009-05-18T09:00:00Z,15,Male
+Las Dominicanas M&M Hair Salon,4,1,3,Casselberry,Florida,Commerce,0,0,1,0,2012-10-18T11:09:00Z,36,Male
+Las Vegas Bus,2,1,1,Las Vegas,Nevada,Other,0,0,1,0,2017-03-25T10:45:00Z,55,Male
+"Law Street in Houston, Texas",9,9,0,Houston,Texas,Open Space,0,0,1,0,2016-09-26T06:30:00Z,46,Male
+Legacy Metrolab,3,2,1,Tualatin,Oregon,Commerce,1,1,1,0,2009-11-10T00:00:00Z,39,Male
+Lehigh Southwest Cement Plant,10,7,3,Cupertino,California,Commerce,2,1,1,0,2011-10-05T04:15:00Z,49,Male
+Liberty Transportation,2,0,2,Perrysburg,Ohio,Commerce,2,0,2,0,2007-08-08T15:15:00Z,43,Male
+Living Church of God,11,4,7,Brookfield,Wisconsin,House of Worship,0,0,1,0,2005-03-12T12:51:00Z,44,Male
+Lloyd D. George U.S. Courthouse and Federal Building,2,1,1,Las Vegas,Nevada,Government,0,1,0,0,2010-01-04T08:02:00Z,66,Male
+Lockheed Martin Subassembly Plant,14,8,6,Meridian,Mississippi,Commerce,1,1,0,0,2003-07-08T09:30:00Z,48,Male
+Los Angeles Internation Airport,4,3,1,Los Angeles,California,Government,1,0,0,0,2013-11-01T09:18:00Z,23,Male
+Louie's Lakeside Eatery,4,4,0,Oklahoma City,Oklahoma,Commerce,0,0,1,0,2018-05-24T18:30:00Z,28,Male
+Louisiana Technical College,2,0,2,Baton Rouge,Louisiana,Education,0,0,1,0,2008-02-08T08:35:00Z,23,Female
+Madison Junior/Senior High School,4,4,0,Middletown,Ohio,Education,0,0,1,0,2016-02-29T11:30:00Z,14,Male
+"Marathon Savings Bank and Tlusty, Kennedy & Dirks, S.C.",4,0,4,Rothschild,Wisconsin,Commerce,1,0,1,0,2017-03-22T12:27:00Z,45,Male
+Marjory Stoneman Douglas High School,34,17,17,Parkland,Florida,Education,1,0,0,0,2018-02-14T14:30:00Z,19,Male
+Marshall County High School,23,21,2,Benton,Kentucky,Education,0,0,1,0,2018-01-23T07:57:00Z,15,Male
+Martin's Supermarket,2,0,2,Elkhart,Indiana,Commerce,0,0,1,0,2014-01-15T22:09:00Z,22,Male
+Marysville-Pilchuck High School,7,3,4,Marysville,Washington,Education,0,0,1,0,2014-10-24T10:39:00Z,15,Male
+Masontown Borough Municipal Center,4,4,0,Masontown,Pennsylvania,Government,0,0,1,0,2018-09-19T14:00:00Z,61,Male
+McBride Lumber Company,4,1,3,Star,North Carolina,Commerce,0,1,0,0,2012-01-13T06:10:00Z,50,Male
+Melbourne Square Mall,2,1,1,Melbourne,Florida,Commerce,0,0,3,0,2015-01-17T09:31:00Z,57,Male
+Memorial Middle School,0,0,0,Joplin,Missouri,Education,1,0,1,0,2006-10-09T07:40:00Z,13,Male
+Memorial Tire and Auto,7,6,1,Houston,Texas,Commerce,1,0,1,0,2016-05-29T10:15:00Z,25,Male
+Mercy Hospital & Medical Center,3,0,3,Chicago,Illinois,Health Care,0,0,1,0,2018-11-19T15:20:00Z,32,Male
+Middletown City Court,1,1,0,Middletown,New York,Government,0,1,0,0,2012-02-08T09:05:00Z,43,Male
+Millard South High School,2,1,1,Omaha,Nebraska,Education,0,0,1,0,2011-01-05T12:44:00Z,17,Male
+Minaret Temple 174,10,8,2,Chester,Philadelphia,Commerce,0,0,1,0,2011-04-08T23:27:00Z,16,Male
+Modine Manufacturing Company,8,5,3,Jefferson City,Missouri,Commerce,0,0,1,0,2003-07-01T22:28:00Z,25,Male
+Monroeville Mall,3,3,0,Monroeville,Pennsylvania,Commerce,0,0,1,0,2015-02-07T19:33:00Z,17,Male
+"Motel 6 in Albuquerque, New Mexico",0,0,0,Albuquerque,New Mexico,Commerce,1,0,0,0,2018-12-24T11:00:00Z,35,Male
+Multiple Locations in Baltimore Maryland,3,3,0,Baltimore,Maryland,Open Space,1,0,1,0,2017-12-15T14:55:00Z,30,Male
+"Multiple Locations in Clearlake Oaks, California",5,3,2,Clearlake Oaks,California,Commerce,0,1,1,0,2017-10-23T11:23:00Z,61,Male
+"Multiple Locations in Fresno, California",3,0,3,Fresno,California,Open Space,0,0,1,0,2017-04-18T10:45:00Z,39,Male
+"Multiple Locations in Isla Vista, California",20,14,6,Isla Vista,California,Open Space,0,0,1,0,2014-05-23T21:27:00Z,22,Male
+"Multiple Locations in Joplin, Missouri",5,5,0,Joplin,Missouri,Open Space,1,0,1,0,2016-08-13T05:08:00Z,26,Male
+"Multiple Locations in Kalamazoo, Michigan",8,2,6,Kalamazoo,Michigan,Open Space,0,0,1,0,2016-02-20T17:40:00Z,45,Male
+"Multiple Locations in Mesa, Arizona",6,5,1,Mesa,Arizona,Open Space,0,0,1,0,2015-03-18T08:39:00Z,41,Male
+"Multiple Locations in Moscow, Idaho",4,1,3,Moscow,Idaho,Open Space,NA,NA,NA,NA,2015-01-10T14:31:00Z,29,Male
+"Multiple Locations in Owosso, Michigan",2,0,2,Owosso,Michigan,Open Space,0,0,3,0,2009-09-11T07:20:00Z,33,Male
+"Multiple Locations in Philadelphia, Pennsylvania",6,5,1,Philadelphia,Pennsylvania,Open Space,0,0,1,0,2016-09-16T23:15:00Z,25,Male
+Navistar International Corporation Factory,8,4,4,Melrose Park,Illinois,Commerce,2,1,1,0,2019-02-05T09:40:00Z,57,Male
+"Neighborhood in Colorado Springs, Colorado",3,0,3,Colorado Springs,Colorado,Open Space,1,0,2,0,2015-10-31T08:55:00Z,33,Male
+"Neighborhood in Tallahassee, Florida",2,1,1,Tallahassee,Florida,Residence,0,0,1,0,2014-11-22T10:15:00Z,53,Male
+New Hope City Hall,4,4,0,New Hope,Minnesota,Government,0,1,0,0,2015-01-26T19:15:00Z,68,Male
+"New River Community College, Satellite Campus",2,2,0,Christiansburg,Virgina,Education,0,1,0,0,2013-04-12T13:55:00Z,22,Male
+Noblesville West Middle School,2,2,0,Noblesville,Indiana,Education,0,0,2,0,2018-05-25T09:06:00Z,13,Male
+"North Milwaukee Avenue, Chicago",0,0,0,Chicago,Illinois,Open Space,0,0,1,0,2015-04-19T23:50:00Z,21,Male
+Nu-Wood Decorative Millwork Plant,7,6,1,Goshen,Indiana,Commerce,0,1,0,0,2001-12-06T14:31:00Z,36,Male
+Oikos University,10,3,7,Oakland,California,Education,0,0,1,0,2012-04-02T10:30:00Z,43,Male
+Omni Austin Hotel Downtown,1,0,1,Austin,Texas,Commerce,1,0,0,0,2015-07-05T04:48:00Z,35,Male
+Orange High School and Residence,3,2,1,Hillsborough,North Carolina,Education,2,1,0,3,2006-08-30T13:00:00Z,19,Male
+Osborn Maledon Law Firm,3,1,2,Phoenix,Arizona,Commerce,0,0,1,0,2013-01-30T10:45:00Z,70,Male
+Panama City School Board Meetings,0,0,0,Panama City,Florida,Education,0,0,1,0,2010-12-14T14:14:00Z,56,Male
+Parking Lots for Kellum Law Firm and Walmart,4,4,0,Greenville,North Carolina,Open Space,0,1,0,0,2013-06-21T11:44:00Z,23,Male
+Parking Lots in Philadelphia Pennsylvania,2,0,2,Philadelphia,Pennsylvania,Open Space,0,0,1,0,2005-10-07T10:13:00Z,45,Male
+Parkwest Medical Center,3,2,1,Knoxville,Tennessee,Health Care,0,0,1,0,2010-04-19T04:30:00Z,38,Male
+Pathmark Supermarket,2,0,2,Old Bridge,New Jersey,Commerce,1,0,1,0,2012-08-31T04:00:00Z,23,Male
+Pennsylvania Municipal Building,5,2,3,Saylorsburg,Pennsylvania,Government,1,0,1,0,2013-08-05T19:19:00Z,59,Male
+Penske Truck Rental,5,2,3,Kennesaw,Georgia,Commerce,0,0,2,0,2010-01-12T14:00:00Z,60,Male
+Perry Hall High School,1,1,0,Baltimore,Maryland,Education,0,1,0,0,2012-08-27T10:45:00Z,15,Male
+Pine Kirk Care Center,3,0,3,Kirkersville,Ohio,Health Care,0,1,1,0,2017-05-12T07:30:00Z,43,Male
+Pine Middle School,2,2,0,Reno,Nevada,Education,0,0,1,0,2006-03-14T09:00:00Z,14,Male
+Pinelake Health and Rehabilitiation Center,11,3,8,Carthage,North Carolina,Health Care,1,1,1,0,2009-03-29T10:00:00Z,45,Male
+Pinewood Village Apartments,4,0,4,Federal Way,Washington,Residence,0,1,1,0,2013-04-21T21:30:00Z,27,Male
+Planned Parenthood - Colorado Springs Westside Health Center,12,9,3,Colorado Springs,Colorado,Health Care,1,0,0,0,2015-11-27T11:38:00Z,57,Male
+Player's Bar and  Grill,4,2,2,Winnemucca,Nevada,Commerce,0,0,1,0,2008-05-25T02:25:00Z,30,Male
+Prince George's County Police Department District 3 Station,1,0,1,Landover,Maryland,Government,0,0,1,0,2016-03-13T16:30:00Z,22,Male
+Private Property near Meteor Wisconsin,8,2,6,Meteor,Wisconsin,Open Space,1,0,0,0,2004-11-21T12:00:00Z,36,Male
+Protest in Dallas Texas,16,11,5,Dallas,Texas,Open Space,2,0,1,0,2016-07-07T21:00:00Z,25,Male
+Publix Super Market,1,0,1,Tarpon Springs,Florida,Commerce,0,0,1,0,2010-03-30T12:00:00Z,41,Female
+Pulse Nightclub,102,53,49,Orlando,Florida,Commerce,1,0,1,0,2016-06-12T02:02:00Z,29,Male
+Radio Shack in Gateway Mall,3,1,2,St. Petersburg,Florida,Commerce,0,0,1,0,2004-11-18T18:45:00Z,25,Male
+"Rancho Tehama Elementary School and Multiple Locations in Tehama County, California",19,14,5,Rancho Tehama Reserve,California,Education,1,0,2,0,2017-11-14T07:53:00Z,44,Male
+Red Lake High School and Residence,15,6,9,Red Lake,Minnesota,Education,0,1,2,0,2005-03-21T14:49:00Z,16,Male
+Red Lion Junior High School,1,0,1,Red Lion,Pennsylvania,Education,0,0,3,0,2003-04-24T07:34:00Z,14,Male
+Renown Regional Medical Center,3,2,1,Reno,Nevada,Health Care,0,1,2,0,2013-12-17T14:00:00Z,51,Male
+"Residence and Bus Stop in Sanford, Florida",6,4,2,Sanford,Florida,Open Space,1,0,0,0,2017-03-27T06:20:00Z,31,Male
+Residence and Construction Site in Jonesboro Arkansas,6,4,2,Jonesboro,Arkansas,Residence,0,0,1,0,2014-05-03T13:00:00Z,40,Male
+"Residence in Brooksville, Florida",5,2,3,Brooksville,Florida,Residence,0,0,1,0,2010-01-14T14:59:00Z,55,Male
+Residence in Capitol Hill Neighborhood Seattle Washington,8,2,6,Seattle,Washington,Residence,1,1,1,0,2006-03-25T07:03:00Z,28,Male
+Residence in Crandon Wisconsin,7,1,6,Crandon,Wisconsin,Residence,1,0,0,0,2007-10-07T02:45:00Z,20,Male
+"Residence in Panama City Beach, Florida",7,7,0,Panama City Beach,Florida,Residence,0,0,1,0,2015-03-28T00:53:00Z,21,Male
+Residence Latah County Courthouse and First Presbyterian Church,6,3,3,Moscow,Idaho,Government,2,0,0,0,2007-05-19T23:00:00Z,36,Male
+Reynolds High School,2,1,1,Portland,Oregon,Education,1,0,1,0,2014-06-10T08:05:00Z,15,Male
+"Reynolds, Smith and Hills",6,5,1,Orlando,Florida,Commerce,0,0,1,0,2009-11-06T11:44:00Z,40,Male
+Rite Aid Perryman Distribution Center's Liberty Support Center,6,3,3,Aberdeen,Maryland,Commerce,0,0,1,0,2018-09-20T09:06:00Z,26,Female
+Rocori High School,2,0,2,Cold Spring,Minnesota,Education,0,0,1,0,2003-09-24T11:35:00Z,15,Male
+Route 91 Harvest Festival,547,489,58,Las Vegas,Nevada,Open Space,4,0,0,0,2017-10-01T22:08:00Z,64,Male
+Safeway Grocery,19,13,6,Tucson,Arizona,Open Space,0,0,1,0,2011-01-08T10:10:00Z,22,Male
+Safeway Warehouse,6,5,1,Denver,Colorado,Commerce,0,0,1,0,2006-06-25T15:03:00Z,22,Male
+Salon Meritage,8,1,7,Seal Beach,California,Commerce,0,0,3,0,2011-10-12T13:20:00Z,41,Male
+Sandbar Sports Grill,4,3,1,Vail,Colorado,Commerce,0,0,1,0,2009-11-07T19:28:00Z,63,Male
+Sandy Hook Elementary School and Residence,29,2,27,Newtown,Connecticut,Education,1,0,2,0,2012-12-14T00:00:00Z,20,Male
+Santa Barbara U.S. Postal Processing and Distribution Center,6,0,6,Goleta,California,Government,0,0,1,0,2006-01-30T19:15:00Z,44,Female
+Santa Fe High School,22,12,10,Santa Fe,Texas,Education,0,1,1,2,2018-05-18T07:30:00Z,17,Male
+Santa Monica College and Residence,9,4,5,Santa Monica,California,Education,0,0,1,0,2013-06-07T11:52:00Z,23,Male
+Santana High School,15,13,2,Santee,California,Education,0,0,1,0,2001-03-05T09:20:00Z,15,Male
+Schlenker Automotive,2,1,1,Rockledge,Florida,Commerce,0,0,1,0,2017-11-17T16:30:00Z,28,Male
+Seattle Pacific University,4,3,1,Seattle,Washington,Education,0,1,0,0,2014-06-05T15:25:00Z,26,Male
+"Shelby Center, University of Alabama",6,3,3,Huntsville,Alabama,Education,0,0,1,0,2010-02-12T16:00:00Z,44,Female
+Sikh Temple of Wisconsin,10,4,6,Oak Creek,Wisconsin,House of Worship,0,0,1,0,2012-08-05T10:25:00Z,40,Male
+Sioux Steel Pro-Tec,3,2,1,Lennox,South Dakota,Commerce,0,0,1,0,2015-02-12T14:00:00Z,51,Male
+Sister Marie Lenahan Wellness Center,2,1,1,Darby,Pennsylvania,Health Care,0,0,1,0,2014-07-24T14:20:00Z,49,Male
+Southern California Edison Corporate Office Building,4,2,2,Irwindale,California,Commerce,0,0,1,0,2011-12-16T13:30:00Z,51,Male
+Sparks Middle School,3,2,1,Sparks,Nevada,Education,0,0,1,0,2013-10-21T07:16:00Z,12,Male
+St. Vincent's Hospital,3,3,0,Birmingham,Alabama,Health Care,0,0,1,0,2012-12-15T04:00:00Z,38,Male
+"Streets of Tulsa, Oklahoma",2,1,1,Tulsa,Oaklahoma,Open Space,0,0,1,0,2012-04-06T01:03:00Z,19,Male
+"Streets of Tulsa, Oklahoma",3,1,2,Tulsa,Oaklahoma,Open Space,0,0,1,0,2012-04-06T01:03:00Z,32,Male
+SuccessTech Academy,4,4,0,Cleveland,Ohio,Education,0,0,2,0,2007-10-10T13:02:00Z,14,Male
+"Syverud Law Office and Miller-Meier Limb and Brace, Inc.",2,2,0,Davenport,Iowa,Commerce,0,0,1,0,2015-10-26T13:56:00Z,40,Male
+"T & T Trucking, Inc. and a Residence",5,0,5,Bakersfield,California,Commerce,0,0,1,0,2018-09-12T17:20:00Z,54,Male
+Tacoma Mall,6,6,0,Tacoma,Washington,Commerce,1,0,1,0,2005-11-20T12:00:00Z,20,Male
+Taft Union High School,2,2,0,Taft,California,Education,0,1,0,0,2013-01-10T08:59:00Z,16,Male
+Target Store,10,8,2,Kansas City,Missouri,Commerce,1,0,0,0,2007-04-29T15:25:00Z,51,Male
+Tennessee Valley Unitarian Universalist Church,9,7,2,Knoxville,Tennessee,House of Worship,0,1,0,0,2008-07-27T10:18:00Z,58,Male
+The Cooler,4,4,0,Rock Falls,Illinois,Commerce,0,0,1,0,2017-04-15T21:30:00Z,32,Male
+The Mall in Columbia,7,5,2,Columbia,Maryland,Commerce,0,1,0,1,2014-01-25T11:15:00Z,19,Male
+"The Ohio State University, Maintenance Building",2,1,1,Columbus,Ohio,Education,0,0,2,0,2010-03-09T03:30:00Z,50,Male
+The Pentagon,2,2,0,Arlington,Virginia,Government,0,0,1,0,2010-03-04T18:36:00Z,36,Male
+The Zone,9,7,2,Portland,Oregon,Commerce,0,0,1,0,2009-01-24T22:37:00Z,24,Male
+Tom Bradley International Terminal at Los Angeles International Airport,4,2,2,Los Angeles,California,Government,0,0,2,0,2002-07-04T11:30:00Z,43,Male
+Townville Elementary School,5,3,2,Townville,South Carolina,Education,0,0,1,0,2016-09-28T13:45:00Z,14,Male
+Tree of Life Synagogue,17,6,11,Pittsburgh,Pennsylvania,House of Worship,1,0,3,0,2018-10-27T09:45:00Z,46,Male
+"Trestle Trail Bridge, Wisconsin",4,1,3,Menasha,Wisconsin,Open Space,0,0,2,0,2015-05-03T19:30:00Z,27,Male
+Trolley Square Mall,9,4,5,Salt Lake City,Utah,Commerce,0,1,1,0,2007-02-12T18:42:00Z,18,Male
+"Two Military Centers in Chattanooga, Tennessee",7,2,5,Chattanooga,Tennessee,Government,1,0,0,0,2015-07-16T10:51:00Z,24,Male
+U.S. Army Recruiting Center,2,1,1,Little Rock,Arkansas,Government,2,0,1,0,2009-06-01T10:19:00Z,23,Male
+Umpqua Community College,16,7,9,Roseburg,Oregon,Education,1,0,2,0,2015-10-01T10:38:00Z,26,Male
+United Parcel Service,2,0,2,Birmingham,Alabama,Commerce,0,0,1,0,2014-09-23T09:20:00Z,45,Male
+United States Holocaust Memorial Museum,1,0,1,Washington,D.C.,Government,1,0,0,0,2009-06-10T12:52:00Z,88,Male
+University of Cincinnati Medical Center,1,1,0,Cincinnati,Ohio,Health Care,0,0,2,0,2017-12-20T14:00:00Z,20,Male
+"University of Pittsburgh Medical Center, Western Psychiatric Institute and Clinic",8,7,1,Pittsburgh,Pennsylvania,Education,0,0,2,0,2012-03-08T13:40:00Z,30,Male
+UPS Customer Center,8,5,3,San Francisco,California,Commerce,0,0,2,0,2017-06-14T08:55:00Z,38,Male
+Valley Protein,4,2,2,Fresno,California,Commerce,0,0,1,0,2012-11-06T08:15:00Z,42,Male
+Virginia Polytechnic Institute and State University,49,17,32,Blacksburg,Virginia,Education,0,0,2,0,2007-04-16T07:15:00Z,23,Male
+Von Maur in Westroads Mall,12,4,8,Omaha,Nebraska,Commerce,1,0,0,0,2007-12-05T13:42:00Z,19,Male
+Waffle House,8,4,4,Nashville,Tennessee,Commerce,1,0,0,0,2018-04-22T03:30:00Z,29,Male
+Walmart,3,3,0,Reno,Nevada,Commerce,0,0,2,0,2010-10-29T08:57:00Z,45,Male
+"Walmart in Thornton, Colorado",3,0,3,Thornton,Colorado,Commerce,0,0,1,0,2017-11-01T18:10:00Z,47,Male
+Walmart Supercenter,2,1,1,Grand Forks,North Dakota,Commerce,0,0,1,0,2015-05-26T01:00:00Z,21,Male
+Washington Navy Yard Building 197,19,7,12,Washington D.C.,Washington D.C.,Government,0,1,0,0,2013-09-16T08:16:00Z,34,Male
+"Washington, D.C. Department of Public Works",2,1,1,Washington D.C.,Washington D.C.,Government,NA,NA,NA,NA,2010-10-13T06:14:00Z,NA,NA
+Watkins Motor Lines,5,3,2,West Chester,Ohio,Commerce,0,0,2,0,2003-11-06T09:57:00Z,50,Male
+Weis Supermarket,3,0,3,Tunkhannock,Pennsylvania,Commerce,0,2,0,0,2017-06-08T01:00:00Z,24,Male
+Wendy's Fast Food Restaurant,5,4,1,West Palm Beach,Florida,Commerce,0,0,1,0,2008-03-03T12:15:00Z,60,Male
+West Liberty-Salem High School,2,2,0,West Liberty,Ohio,Education,0,1,0,0,2017-01-20T07:36:00Z,17,Male
+West Nickel Mines School,10,5,5,Bart Township,Pennsylvania,Education,1,1,1,0,2006-10-02T10:30:00Z,32,Male
+Weston High School,1,0,1,Cazenovia,Wisconsin,Education,1,0,1,0,2006-09-29T08:00:00Z,15,Male
+Windy City Core Supply Inc,6,0,6,Chicago,Illinois,Commerce,0,0,1,0,2003-08-27T08:30:00Z,36,Male
+WTS Paradigm,4,4,0,Middleton,Wisconsin,Commerce,0,0,1,0,2018-09-19T10:30:00Z,43,Male
+Youth with a Mission Training Center/New Life Church,9,5,4,Colorado Springs,Colorado,House of Worship,1,0,2,2,2007-12-09T00:29:00Z,24,Male
+YouTube Headquarters,4,4,0,San Bruno,California,Commerce,0,0,1,0,2018-04-03T12:45:00Z,39,Female
+Yoyito Café,7,3,4,Hialeah,Florida,Commerce,0,0,1,0,2010-06-06T22:00:00Z,37,Male
+ZigZag Net Inc,4,1,3,Philadelphia,Pennsylvania,Commerce,1,0,1,0,2007-02-12T20:00:00Z,44,Male

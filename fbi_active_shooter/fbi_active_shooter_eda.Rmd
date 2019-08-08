@@ -1,7 +1,7 @@
 ---
 title: "fbi_active_shooters"
 author: "Tyler Mallon"
-date: "`r `"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: html_document
 ---
 
@@ -9,22 +9,144 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+```{r pkgload}
+library(here)
+library(tidyverse)
+library(lubridate)
+library(stringr)
+library(viridis)
 ```
 
-## Including Plots
+```{r read_data_initial, eval = FALSE}
+active_shooters <- read_csv(here("fbi_active_shooter", "active_shooters.csv"))
 
-You can also embed plots, for example:
+active_shooters <- active_shooters %>%
+  mutate(Date = str_replace_all(Date, pattern = "/", replacement = "-")) %>%
+  unite("date_time", Date, Time, sep = " ") %>%
+  mutate(date_time = mdy_hms(date_time)) %>%
+  rename(event_name = `Active Shooter Event`,
+         casualties = `Active Shooter Casualties`,
+         wounded = `Active Shooter Wounded`,
+         killed = `Active Shooter Killed`,
+         city = City,
+         state = State,
+         location_type = `Location Type`,
+         rifles = Rifles,
+         shotguns = Shotguns,
+         handguns = Handguns,
+         explosives = Explosives,
+         shooter_age = `Age of Shooter`,
+         shooter_gender = `Gender of Shooter`)
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+if(sum(active_shooters$casualties != (active_shooters$wounded + active_shooters$killed)) != 0) {
+active_shooters  <- active_shooters %>%
+    mutate(casualties = ifelse(casualties != (wounded + killed), wounded + killed, casualties))
+
+write_csv(active_shooters, here("fbi_active_shooter", "active_shooters_clean.csv"), append = FALSE)
+
+}
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r read_data_clean}
+active_shooters <- read_csv(here("fbi_active_shooter", "active_shooters_clean.csv"))
+```
+
+```{r data_manipulation}
+active_shooters <- active_shooters %>%
+  mutate(year = year(date_time), 
+         month = month(date_time), 
+         hour = hour(date_time), 
+         day = wday(date_time, label = TRUE),
+         location_type = as_factor(location_type),
+         shooter_gender = as_factor(shooter_gender),
+         state = as_factor(state))
+
+active_shooters <- active_shooters %>%
+  mutate(state = fct_recode(state,
+                            "Georgia" = "Georgio",
+                            "Virginia" = "Virgina",
+                            "Oklahoma" = "Oaklahoma",
+                            "Washington D.C." = "D.C."))
+```
+
+* Total incidents by year
+* Wounded & Killed by year
+* Weapon counts by year
+* Events by time of day
+* Number of casualties with only handguns used in events vs total casualties
+* Event distribution by gender
+* Event distribution by age
+* Map casualties per capita by state 
+
+```{r incidents_by_year}
+active_shooters %>%
+  select(event_name, year) %>%
+  distinct() %>%
+  group_by(year) %>%
+  count() %>%
+  filter(between(year, 2001, 2018)) %>%
+  ggplot(aes(x = year, y = n)) +
+  geom_line() +
+  theme_minimal() +
+  labs(x = "Year", 
+       y = "Active Shooter Events", 
+       title = "The number of Active Shooter events per year has trended upwards", 
+       subtitle = "In 2017 there was an Active Shooter event at a rate of over twice a month")
+```
+
+```{r}
+active_shooters %>%
+  select(event_name, wounded, killed, year) %>%
+  group_by(event_name, year) %>%
+  summarise(wounded = sum(wounded), killed = sum(killed)) %>%
+  gather(casualty_type, count, -event_name, -year) %>%
+  ungroup() %>%
+  group_by(year, casualty_type) %>%
+  summarise(n = sum(count)) %>%
+  filter(between(year, 2001, 2018)) %>%
+  ggplot(aes(x = year, y = n, fill = casualty_type)) +
+  geom_col() +
+  scale_fill_viridis(discrete = TRUE, option = "E") +
+  theme_minimal()
+  
+```
+
+```{r}
+active_shooters %>%
+  select(event_name, rifles, shotguns, handguns, explosives, year) %>%
+  na.omit(.) %>%
+  group_by(event_name, year) %>%
+  summarise(rifles = sum(rifles), shotguns = sum(shotguns), handguns = sum(handguns), explosives = sum(explosives)) %>%
+  gather(firearms_type, count, -event_name, -year) %>%
+  group_by(year, firearms_type) %>%
+  summarise(n = sum(count)) %>%
+  filter(between(year, 2001, 2018)) %>%
+  ggplot(aes(x = year, y = n, fill = firearms_type)) +
+  geom_col() +
+  scale_fill_viridis(discrete = TRUE, option = "E") +
+  theme_minimal()
+```
+
+```{r}
+active_shooters %>%
+  select(killed, wounded, day, event_name) %>%
+  group_by(day) %>%
+  summarise(killed = sum(killed), wounded = sum(wounded), event_count = n()) %>%
+  gather(casualty_type, count, -day, -event_count) %>%
+  ggplot(aes(x = day, y = count, fill = event_count)) +
+  geom_col() +
+  scale_fill_viridis(discrete = TRUE, option = "E") +
+  theme_minimal()
+```
+
+```{r}
+active_shooters %>%
+  select(killed, wounded, hour) %>%
+  group_by(hour) %>%
+  summarise(killed = sum(killed), wounded = sum(wounded)) %>%
+  gather(casualty_type, count, -hour)
+```
+
+```{r}
+
+```
