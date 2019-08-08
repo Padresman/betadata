@@ -66,13 +66,17 @@ active_shooters <- active_shooters %>%
                             "Georgia" = "Georgio",
                             "Virginia" = "Virgina",
                             "Oklahoma" = "Oaklahoma",
-                            "Washington D.C." = "D.C."))
+                            "Washington D.C." = "D.C."),
+         shooter_gender = fct_recode(shooter_gender,
+                                     "Male" = "Mae"))
 ```
 
 * Total incidents by year
 * Wounded & Killed by year totals and on a per event basis
 * Weapon counts by year
 * Wounded & Killed by day of week and events by day of week
+
+
 * Event distribution by gender
 * Event distribution by age
 * Top 10 events by casualties
@@ -80,7 +84,7 @@ active_shooters <- active_shooters %>%
 * Map casualties per capita by state 
 
 ```{r incidents_by_year}
-active_shooters %>%
+active_shooters %>% 
   select(event_name, year) %>%
   distinct() %>%
   group_by(year) %>%
