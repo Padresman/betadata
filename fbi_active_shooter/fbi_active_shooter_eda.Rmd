@@ -1,6 +1,6 @@
 ---
-title: "fbi_active_shooters"
-author: "Tyler Mallon"
+title: "FBI Active Shooters EDA"
+author: "USAFacts"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: html_document
 ---
@@ -18,7 +18,7 @@ library(viridis)
 ```
 
 ```{r read_data_initial, eval = FALSE}
-active_shooters <- read_csv(here("fbi_active_shooter", "active_shooters.csv"))
+active_shooters <- read_csv(here::here("fbi_active_shooter", "active_shooters.csv"))
 
 active_shooters <- active_shooters %>%
   mutate(Date = str_replace_all(Date, pattern = "/", replacement = "-")) %>%
@@ -42,13 +42,13 @@ if(sum(active_shooters$casualties != (active_shooters$wounded + active_shooters$
 active_shooters  <- active_shooters %>%
     mutate(casualties = ifelse(casualties != (wounded + killed), wounded + killed, casualties))
 
-write_csv(active_shooters, here("fbi_active_shooter", "active_shooters_clean.csv"), append = FALSE)
+write_csv(active_shooters, here::here("fbi_active_shooter", "active_shooters_clean.csv"), append = FALSE)
 
 }
 ```
 
 ```{r read_data_clean}
-active_shooters <- read_csv(here("fbi_active_shooter", "active_shooters_clean.csv"))
+active_shooters <- read_csv(here::here("fbi_active_shooter", "active_shooters_clean.csv"))
 ```
 
 ```{r data_manipulation}
@@ -70,12 +70,13 @@ active_shooters <- active_shooters %>%
 ```
 
 * Total incidents by year
-* Wounded & Killed by year
+* Wounded & Killed by year totals and on a per event basis
 * Weapon counts by year
-* Events by time of day
-* Number of casualties with only handguns used in events vs total casualties
+* Wounded & Killed by day of week and events by day of week
 * Event distribution by gender
 * Event distribution by age
+* Top 10 events by casualties
+* Number of casualties with only handguns used in events vs total casualties
 * Map casualties per capita by state 
 
 ```{r incidents_by_year}
@@ -94,7 +95,7 @@ active_shooters %>%
        subtitle = "In 2017 there was an Active Shooter event at a rate of over twice a month")
 ```
 
-```{r}
+```{r casualties_by_year_and_type}
 active_shooters %>%
   select(event_name, wounded, killed, year) %>%
   group_by(event_name, year) %>%
@@ -105,18 +106,20 @@ active_shooters %>%
   summarise(n = sum(count)) %>%
   filter(between(year, 2001, 2018)) %>%
   ggplot(aes(x = year, y = n, fill = casualty_type)) +
-  geom_col() +
+  geom_area() +
   scale_fill_viridis(discrete = TRUE, option = "E") +
   theme_minimal()
-  
 ```
 
-```{r}
+```{r firearms_by_year_and_type}
 active_shooters %>%
   select(event_name, rifles, shotguns, handguns, explosives, year) %>%
   na.omit(.) %>%
   group_by(event_name, year) %>%
-  summarise(rifles = sum(rifles), shotguns = sum(shotguns), handguns = sum(handguns), explosives = sum(explosives)) %>%
+  summarise(rifles = sum(rifles), 
+            shotguns = sum(shotguns), 
+            handguns = sum(handguns), 
+            explosives = sum(explosives)) %>%
   gather(firearms_type, count, -event_name, -year) %>%
   group_by(year, firearms_type) %>%
   summarise(n = sum(count)) %>%
@@ -127,26 +130,32 @@ active_shooters %>%
   theme_minimal()
 ```
 
-```{r}
+```{r events_and_casualties_by_day}
+active_shooters %>%
+  select(killed, wounded, day) %>%
+  group_by(day) %>%
+  summarise(killed = sum(killed), wounded = sum(wounded)) %>%
+  gather(casualty_type, count, -day) %>%
+  ggplot(aes(x = day, y = count, fill = casualty_type)) +
+  geom_col() +
+  scale_fill_viridis(discrete = TRUE, option = "E") +
+  theme_minimal()
+
 active_shooters %>%
   select(killed, wounded, day, event_name) %>%
   group_by(day) %>%
   summarise(killed = sum(killed), wounded = sum(wounded), event_count = n()) %>%
   gather(casualty_type, count, -day, -event_count) %>%
-  ggplot(aes(x = day, y = count, fill = event_count)) +
+  ggplot(aes(x = day, y = event_count)) +
   geom_col() +
   scale_fill_viridis(discrete = TRUE, option = "E") +
   theme_minimal()
 ```
 
-```{r}
-active_shooters %>%
-  select(killed, wounded, hour) %>%
-  group_by(hour) %>%
-  summarise(killed = sum(killed), wounded = sum(wounded)) %>%
-  gather(casualty_type, count, -hour)
+```{r event_distribution_by_gender}
+
 ```
 
-```{r}
+```{r event_distribution_by_age}
 
 ```
