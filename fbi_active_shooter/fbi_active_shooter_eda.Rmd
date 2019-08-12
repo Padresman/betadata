@@ -161,8 +161,9 @@ active_shooters %>%
 ```{r event_distribution_by_gender}
 
 active_shooters %>% 
+  filter(between(year, 2001, 2018)) %>%
   select(event_name, shooter_gender) %>% 
-  group_by(event_name, shooter_gender) %>% 
+  group_by(shooter_gender) %>% 
   na.omit(.) %>%
   count() %>% 
   ggplot(aes(x=shooter_gender, y=n, fill = shooter_gender)) + 
